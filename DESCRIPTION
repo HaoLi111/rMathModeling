@@ -1,0 +1,13 @@
+Package: rMathModeling
+Type: Package
+Title: R Functional Programming Solution for Mathematical Modeling 4 Ed
+Version: 0.1.0
+Author: Mark Meerschaert, Hao Li
+Maintainer: Hao Li <yourself@somewhere.net>
+Description: TO BE TESTED!!! UNDER DEVELOPMENT!!!
+    R Functional Programming Solution for Mathematical Modeling 4 Ed by Prof. Mark M. Meerschaert
+    The models are classified into 3 groups: Optimization models, Dynamic Models, and Probability Models
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: plot3D,rgl,plot3Drgl
