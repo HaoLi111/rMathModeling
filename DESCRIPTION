@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Hao Li
 Maintainer: Hao Li <yourself@somewhere.net>
 Description: TO BE TESTED!!! UNDER DEVELOPMENT!!!
-    R Functional Programming Solution for Mathematical Modeling 4 Ed by Prof. Mark M. Meerschaert
+    R Functional Programming Solution for Mathematical Modeling 4 Ed
     The models are classified into 3 groups: Optimization models, Dynamic Models, and Probability Models
 License: What license is it under?
 Encoding: UTF-8
