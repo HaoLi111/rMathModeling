@@ -1,8 +1,8 @@
 # rMathModeling
 
-#[Under development. Testing and modificaiton being planned]
+# [Under development. Testing and modificaiton being planned]
 
-##Overview
+## Overview
 
 This package is designed to manipulate general models.
 
@@ -19,7 +19,7 @@ easily reused to work on more general modeling tools.
 
 You may call these functions to build individual models, or wrap them up to manage systems with multiple models.
 
-##Installation and a quick start
+## Installation and a quick start
 
 A copy of R is needed to run the package. You can get a local version from
 https://www.r-project.org/
@@ -40,11 +40,11 @@ library(rMathModeling)
 
 ------------------------------------
 to be written
-##optim_
+## optim_
 
-##dynam_
+## dynam_
 
-##probs_
+## probs_
 
-##Utilization on system modeling
+## Utilization on system modeling
 
