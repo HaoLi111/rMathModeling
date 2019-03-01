@@ -3,7 +3,7 @@ dynam_record = function(init,...) UseMethod('dynam_record')
 
 dynam_record.numeric = function(init,index,
                         Fupdate,.combine = 'rbind',#,param = NULL,#cond = NULL,
-                        record_per=1){
+                        record_per=1,...){
   no_it=floor(length(index)/record_per)# # of iterations
   no_var=length(init)+1      # # of  recorded variable
   stopifnot(no_it>0)
@@ -11,7 +11,7 @@ dynam_record.numeric = function(init,index,
     re = matrix(NA,no_it,no_var)
     flow = init
     for(i in seq_along(index)){
-      flow = Fupdate(flow)
+      flow = Fupdate(flow,...)
       if(i%%record_per==0) re[as.integer(i/record_per),] = c(index[i],flow)
     }
     return(re)
@@ -19,7 +19,7 @@ dynam_record.numeric = function(init,index,
     re = matrix(NA,no_var,no_it)
     flow = init
     for(i in seq_along(index)){
-      flow = Fupdate(flow)
+      flow = Fupdate(flow,...)
       if(i%%record_per==0) re[,as.integer(i/record_per)] = c(flow,index[i])
     }
     return(re)
@@ -27,7 +27,7 @@ dynam_record.numeric = function(init,index,
     re = list(init=init)
     flow = init
     for(i in seq_along(index)){
-      flow = Fupdate(flow)
+      flow = Fupdate(flow,...)
       if(i%%record_per==0) re[[as.integer(i/record_per)+1]] = c(index[i],flow)
     }
     return(re)
@@ -45,7 +45,7 @@ dynam_record.list =function(init,index,
     re = matrix(NA,no_it,no_var)
     flow = init_unlist
     for(i in seq_along(index)){
-      flow = Fupdate(flow)
+      flow = Fupdate(flow,...)
       if(i%%record_per==0) re[as.integer(i/record_per),] = c(index[i],flow)
     }
     return(re)
@@ -53,7 +53,7 @@ dynam_record.list =function(init,index,
     re = matrix(NA,no_var,no_it)
     flow = init_unlist
     for(i in seq_along(index)){
-      flow = Fupdate(flow)
+      flow = Fupdate(flow,...)
       if(i%%record_per==0) re[,as.integer(i/record_per)] = c(flow,index[i])
     }
     return(re)
@@ -61,7 +61,7 @@ dynam_record.list =function(init,index,
     re = list(init=init)
     flow = init
     for(i in seq_along(index)){
-      flow = Fupdate(flow)
+      flow = Fupdate(flow,...)
       if(i%%record_per==0) re[[as.integer(i/record_per)+1]] = c(index[i],flow)
     }
     return(re)

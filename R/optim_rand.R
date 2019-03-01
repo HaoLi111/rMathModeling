@@ -1,6 +1,5 @@
 #optim_rand
-optim_rand = function(x,...) UseMethod('optim_rand')
-optim_rand = function(x,f,lim,
+optim_rand = function(f,init,
                       n = 100){
   base = runif(n,min = lim[1],max=lim[2])
   re = ifelse(isTRUE(x(base)),
