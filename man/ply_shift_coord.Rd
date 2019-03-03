@@ -40,14 +40,10 @@ Hao Li
 \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (x)
-{
-  }
+ply_shift_coord((function(l) l$x^2+l$y^2-3*l$z^2),iter = list(x = c(1,3),
+y = c(0,2),
+z = c(-1,4)),
+init =  list(x=1,y=1.5,z = 1))
 }
 \keyword{ ~optimize }% use one of  RShowDoc("KEYWORDS")
 \keyword{ ~multivariable }% __ONLY ONE__ keyword per line

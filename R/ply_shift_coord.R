@@ -1,8 +1,6 @@
 #ply_shift_coord
-ply_shift_coord = function(fListPly,iter = list(x = c(1,3),
-                                         y = c(0,2),
-                                         z = c(-1,4)),
-                           init = list(x=1,y=1.5,z = 1),
+ply_shift_coord = function(fListPly,iter,
+                           init,
                            optimFunc = optim_midp,nply_iter = 5,...){
   flow = init
   l = length(iter)
@@ -25,4 +23,3 @@ ply_shift_coord = function(fListPly,iter = list(x = c(1,3),
   return(opt)
 }
 
-#ply_shift_coord((function(l) l$x^2+l$y^2-3*l$z^2))

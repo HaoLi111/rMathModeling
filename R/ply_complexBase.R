@@ -5,6 +5,7 @@ dynam_update_Julia<-function(z,C) z=z^2+C
 #dynam_escapeStep(0,n=1000)
 
 
+
 ply_complexBase=function(re,im,f,loop = T,...){
   grid = as.matrix(expand.grid(re,im))
   nr=length(re)
