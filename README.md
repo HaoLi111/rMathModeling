@@ -1,6 +1,6 @@
 # rMathModeling
 
-# [Under development. Testing and modificaiton being planned]
+# [1st stable release 1.0.0]
 
 ## Overview
 
@@ -43,8 +43,6 @@ to be written
 ## optim_
 
 ## dynam_
-
-## probs_
 
 ## Utilization on system modeling
 
