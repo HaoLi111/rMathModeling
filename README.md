@@ -2,6 +2,9 @@
 
 # [1st stable release 1.0.0]
 
+# See the rich version with plots rendered
+https://github.com/HaoLi111/rMathModeling/blob/master/README.pdf
+
 ## Overview
 
 This package is designed to manipulate general models.
