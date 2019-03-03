@@ -263,8 +263,11 @@ Compatibilities of the dynam_record function is to be tested with other packages
 Special thanks to:
 
 Prof. M. Meerschaert for writing the inspiring book and suggestions on plotting and functional programming.
-M. Liu for checking the results for the dynamic model analysis。
-Patrick, our tutor during STAR MATH 199 in UC for patiently explaining math concepts for us and answering my endless questions.
-All my teachers from BHS for the suggestions on stats and projects.
-And my family, all my friends for the toloerance of my stubborness on math.
 
+M. Liu for checking the results for the dynamic model analysis。
+
+Patrick, our tutor during STAR MATH 199 in UC for patiently explaining math concepts for us and answering my endless questions.
+
+All my teachers from BHS for the suggestions on stats and projects.
+
+And my family, all my friends for the toloerance of my stubborness on math.
