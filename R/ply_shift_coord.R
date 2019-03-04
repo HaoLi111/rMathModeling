@@ -4,9 +4,9 @@ ply_shift_coord = function(fListPly,iter,
                            optimFunc = optim_midp,nply_iter = 5,...){
   flow = init
   l = length(iter)
-  f= function(var,fListPly,# = get('f',pos = 'ply_shift_coord'),
-                      flow,#= get('flow',pos = 'ply_shift_coord'),
-                      flowInd){# = get('j',pos = 'ply_shift_coord')){
+  f= function(var,fListPly,
+                      flow,
+                      flowInd){
     flow[[flowInd]] = var
     fListPly(flow)
   }

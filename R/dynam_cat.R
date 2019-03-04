@@ -1,21 +1,24 @@
 dynam_cat = function(init,index,
                      Fupdate,
                      record_per=1,
-                     file = tempfile(),
-                     type = '.csv'){
-  no_it=floor(length(index)/record_per)# # of iterations
-  no_var=length(init)+1      # # of  recorded variable
-  if(type=='.csv'){
-    clb = ','
-  }else if(type =='.txt'){
-    clb='    '
+                     file = NULL,
+                     form = '.csv',
+                     cat_per = 10,
+                     writeF = write.csv,...){
+  if(is.null(file)) {
+    file = sapply(1:(length(index)/cat_per/record_per),as.character)
   }
-  stopifnot(no_it>0)
-    flow = init
-    for(i in seq_along(index)){
-      flow = Fupdate(flow)
-      if(i%%record_per==0) writeLines(paste0(c(index[i],flow),collapse = clb),con=file)
-    }
+  no_it=floor(length(index)/record_per)#  of iterations
+  no_cat = length(file)
+  i=1
+  flow = init
+  for(j in 1:no_cat){
+    temp = dynam_record(flow,index = index[i:(i+cat_per*record_per-1)],.combine = 'rbind',Fupdate,record_per)
+    flow = temp[nrow(temp),]
+    writeF(temp,paste0(file[j],form))
+    i = i+cat_per*record_per
+  }
     return(0)
 }
+
 

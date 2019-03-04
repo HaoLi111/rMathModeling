@@ -10,7 +10,6 @@ optim_rand = function(f,init1,init2 = NULL,
   list(opt = min(re,na.rm = T),
        dep = base[which.min(re)])
 }
-#optim_rand(x = (function(x) TRUE),f = (function(x) x^2),lim = c(-1,10))
 parOptim_rand = function(f,init1,init2 = NULL,n=1e5,divide = 4){
   if(is.null(init2)){
     init2 = as.numeric(init1[2])
@@ -26,17 +25,3 @@ parOptim_rand = function(f,init1,init2 = NULL,n=1e5,divide = 4){
   list(opt = min(re[,2],na.rm = T),
        dep = re[which.min(re[,2]),1])
 }
-#require(doParallel)
-#registerDoParallel(4)
-#system.time({
-#  opt = parOptim_rand(x = (function(x) TRUE),f = (function(x) x^79),lim = c(-100,10),n=100)
-#  print(opt)
-#})
-
-#system.time({
-#  opt = optim_rand(x = (function(x) TRUE),f = (function(x) x^79),lim = c(-100,10),n=100)
-#  print(opt)
-#})
-#optim_mvar_rand = function(x,f,lim){
-#
-#}
