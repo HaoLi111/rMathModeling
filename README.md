@@ -1,6 +1,18 @@
 # rMathModeling
 
+# Important Notice
+
+I am planning to update the package. Enhancement may include:
+
+1. optim_...() function wrappers that calls r optim() with method
+2. dynam_...() function enabling level-2 Euler/ leve-4 Runge-Kutta method
+3. dynam_...() function to reshape a function to be called with desolve package
+4. ..._report() function to generate report from templates for certain types of model
+
+
 # [1st stable release 1.0.0]
+
+
 
 # See the rich version with plots rendered
 https://github.com/HaoLi111/rMathModeling/blob/master/README.pdf
