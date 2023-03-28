@@ -1,5 +1,16 @@
 # rMathModeling
 
+The packages and repos are possible thanks to Prof. Meerschart's book and his suggestions via email
+Book website: https://www.stt.msu.edu/users/mcubed/modeling.html
+
+For the package in R containing some algorithm in the book: https://github.com/HaoLi111/rMathModeling
+
+For sample code in R (My edited version), see: https://github.com/HaoLi111/Mathematical-Modeling-R-Sample-Code
+
+For sample code in SageMath, see: https://github.com/HaoLi111/Mathematical-Modeling-Sage-Math-Sample-Code
+
+
+
 # Important Notice
 
 I am planning to update the package. Enhancement may include:
