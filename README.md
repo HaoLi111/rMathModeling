@@ -1,7 +1,8 @@
 # rMathModeling
 
-The packages and repos are possible thanks to Prof. Meerschart's book and his suggestions via email
-Book website: https://www.stt.msu.edu/users/mcubed/modeling.html
+The packages and repos are possible thanks to Prof. Meerschaert's book and his suggestions via email
+
+This package is linked from the book website by Prof Meerschaert: https://www.stt.msu.edu/users/mcubed/modeling.html
 
 For the package in R containing some algorithm in the book: https://github.com/HaoLi111/rMathModeling
 
